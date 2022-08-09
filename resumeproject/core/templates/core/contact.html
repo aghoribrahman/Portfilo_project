@@ -1,0 +1,57 @@
+{% extends "core/base.html" %}
+{% block content %}
+<div class=' container mt-5'>
+    <h1 class='text-warning mb-5'>Contact</h1>
+    <h1 class='border-bottom mb-5'></h1>
+    <div class='row text-center text-white mb-3'>
+        <p calss='mx-auto mb-5'> Do you have any questions? Please do not hesitate to contact.
+            I will come back to you within a matter of hours to respond to your query
+        </p>
+        <div class='col-sm-9 mb-7'>
+            <form action="">
+                <div class='form-row'>
+                    <div class='form col-md-6 mb-3' >
+                        <label for="inputName">Your Name</label>
+                        <input type="text" class='form-control' id='inputName'/>
+                    </div>
+                </div>
+                <div class='form col-md-6 mb-3' >
+                    <label for="inputEmail">Your Email</label>
+                    <input type="email" class='form-control' id='inputEmail' required/>
+                </div>
+                <div class='form-group col-md-6 mb-3'>
+                    <label for="inputSubject">Your Query Subject</label>
+                    <input type="text" class='form-control' id='inputSubject'/>
+                </div>
+                <div class='mb-3'>
+                    <label for="inputTextarea">Your Message</label>
+                    <textarea class='form-control' id='inputTextarea' required/></textarea>
+                </div>
+                <button class='btn btn-ptimary btn-outline-warning text-white' type='submit'>Send</button>
+            </form>
+        </div>
+        <div class='col-sm-3 text-center'>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-location-dot mt-4 fa-2x i-color"></i>
+                    <p>Rewa, Madhya Pradesh, India</p>
+                </li>
+                <li>
+                    <i class='fas fa-phone mt-4 fa-2x i-color'></i>
+                    <p>+91 9630319444</p>
+                </li>
+                <li>
+                    <i class='fas fa-envelope mt-4 fa-2x i-color'></i>
+                    <p>mohit.4033@gmail.com</p>
+                </li>
+            </ul>
+ 
+    </div>
+</div>
+<div class='text-center' >
+    <a href="https://www.linkedin.com/in/mohit-trivedi-b8462216b" target="_blank"><i class="fa-brands fa-linkedin mr-3 "></i></a>
+    <a href=" https://www.hackerrank.com/mohit_4033" target="_blank"><i class='fa-brands fa-hackerrank i color mr-3'></i></a>
+    <a href="https://www.facebook.com/mohit.trivedi.372/" target="_blank"><i class='fab fa-facebook i color mr-3'></i></a>
+    <a href="https://discord.com/channels/267624335836053506/723655946672275466" target="_blank"><i class='fa-brands fa-discord i color mr-3'></i></a>
+</div>
+{% endblock content %}

@@ -1,0 +1,31 @@
+{% extends "core/base.html" %}
+{% load static %}
+{% block content %}
+<div class="mt-5">
+    <div class='text-center'>
+        <img src="{% static 'core/images/image.jpg' %}" alt="ProfilePic" 
+        class="img-thumbnail" width="250px" height="150px">
+    </div>
+    
+    <div class='mt-5 text-white mx-5 text-justify'>
+        <h1 class="font-weight-bold st-font">Hello,</h1>
+        <div class='px-4' style='line-height:2rem;'>
+            <p style="text-indent:100px;">
+                        I'am <b class="text-warning">Mohit Trivedi</b> Self-motivated person bringing leadership, 
+                organizational and <b class='text-warning'>customer relations skills</b>. 
+                Independently solved problems and kept teams on task 
+                to handle diverse business requirements. 
+                <p>Facilitate positive experiences through intellect and 
+                prompt resolution. Proficient in developing databases,
+                creating user interface, <b class="text-warning">writing and testing codes</b>, 
+                troubleshooting simple/complex issues, 
+                and implementing new features based on user feedback.</p>
+            </p>
+        </div>
+    </div>
+    <div class='text-center'>
+        <a href="https://www.linkedin.com/in/mohit-trivedi-b8462216b" class="btn btn-outline-warning my-3 mr-5  text-white"> Hire me </a>
+        <a href="{% url 'contact' %}" class="btn btn-outline-info my-3 text-white offset-sm-1"> Contact </a>
+    </div>
+</div>
+{% endblock content %}
